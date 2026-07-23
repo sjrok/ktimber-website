@@ -82,15 +82,14 @@
   .hero h1 em{font-style:normal; color:var(--oak-deep);}
   .hero p.lead{margin-top:22px; max-width:560px; font-size:16.5px; color:var(--ink-soft);}
   .hero-ctas{display:flex; gap:14px; margin-top:36px; flex-wrap:wrap;}
-  .hero-stats{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0; margin-top:70px; border-top:1px solid var(--line);}
-  .hero-stats div{padding:22px 22px 0; border-right:1px solid var(--line);}
-  .hero-stats div:last-child{border-right:none;}
+  .hero-stats{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); column-gap:28px; row-gap:28px; margin-top:70px; border-top:1px solid var(--line);}
+  .hero-stats div{padding:22px 0 0;}
   .hero-stats .num{font-family:var(--mono); font-size:25px; font-weight:700; color:var(--oak-deep); white-space:nowrap;}
   .hero-stats .num span{font-weight:600;}
   @media (max-width:480px){ .hero-stats{padding:0 4px;} .hero-stats .num{font-size:17px;} }
   @media (max-width:360px){ .hero-stats .num{font-size:15px;} }
   .hero-stats .lbl{font-size:12.5px; color:var(--ink-soft); margin-top:5px;}
-  @media (max-width:800px){.hero-stats{grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:24px;} .hero-stats div:nth-child(2n){border-right:none;}}
+  @media (max-width:800px){.hero-stats{grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:24px; column-gap:20px;}}
 
   .trust{background:var(--bg-soft-2); border-bottom:1px solid var(--line); padding:20px 0;}
   .trust .wrap{display:flex; gap:36px; flex-wrap:wrap; justify-content:space-between; align-items:center;}
@@ -327,7 +326,7 @@
       </div>
       <div class="cat-card">
         <span class="cat-chip chip-sport" data-i18n="chip3">체육관마루</span>
-        <h3 data-i18n="prod3_h3">다목적체육관 마루</h3>
+        <h3 data-i18n="prod3_h3">다목적<br>체육관 마루</h3>
         <p data-i18n="prod3_p">북미경질단풍나무 또는 경질단풍나무 무늬목에 UV 코팅을 더해 내마모성과 미끄럼 저항을 높인 체육시설 전용 마루입니다.</p>
         <div class="cat-spec" data-i18n="spec3">K-001/K-004 · L1800×W60~75×t22mm<br>북미경질단풍나무 또는 경질단풍나무 / UV도장</div>
       </div>
