@@ -36,6 +36,7 @@
   img{max-width:100%; display:block;}
   .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
   @media (max-width:640px){.wrap{padding:0 20px;}}
+  [class*="-grid"] > *{min-width:0;}
 
   /* ---------- grain texture (SVG filter, reused) ---------- */
   .grain-defs{position:absolute; width:0; height:0; overflow:hidden;}
@@ -413,9 +414,10 @@
   /* ---------- home quick nav cards ---------- */
   .quick-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
   @media (max-width:860px){ .quick-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .quick-grid{grid-template-columns:1fr;} }
   .quick-card{
     background:var(--ivory); border:1px solid var(--line); border-radius:8px; padding:26px 22px;
-    box-shadow:var(--shadow); transition:transform .2s ease;
+    box-shadow:var(--shadow); transition:transform .2s ease; min-width:0;
   }
   .quick-card:hover{transform:translateY(-4px);}
   .quick-card .qn{font-size:12px; font-weight:800; color:var(--oak); margin-bottom:10px; display:block;}
